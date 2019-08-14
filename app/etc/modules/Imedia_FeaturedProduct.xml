@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Imedia_FeaturedProduct>
+            <active>true</active>
+            <codePool>community</codePool>
+           <!--  <depends>
+                <Mage_Catalog/>
+            </depends> -->
+        </Imedia_FeaturedProduct>
+    </modules>
+</config>

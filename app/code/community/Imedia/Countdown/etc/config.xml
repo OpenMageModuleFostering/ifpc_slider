@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Imedia_Countdown>
+			<version>0.0.1</version>
+		</Imedia_Countdown>
+	</modules> 
+	<frontend>
+        <routers>
+            <imedia_countdown>
+                <use>standard</use>
+                <args>
+                    <module>Imedia_Countdown</module>
+                    <frontName>page</frontName>
+                </args>
+            </imedia_countdown>
+        </routers>		
+    </frontend>	
+	
+	<admin>
+        <routers>
+            <adminhtml>
+				<args>
+					<modules>
+						<Imedia_Countdown  before="Mage_Adminhtml">Imedia_Countdown_Adminhtml</Imedia_Countdown>
+					</modules>
+				</args>
+            </adminhtml>
+        </routers>
+    </admin>
+	<adminhtml>
+        <layout>
+            <updates>
+                <imedia_countdown>
+                <file>imedia/countdown.xml</file>
+                </imedia_countdown>
+            </updates>
+        </layout>
+    </adminhtml>
+	
+	<global>
+
+		<blocks>
+            <imedia_countdown>
+                <class>Imedia_Countdown_Block</class>
+            </imedia_countdown>
+        </blocks>
+		
+        <models>
+            <imedia_countdown>
+                <class>Imedia_Countdown_Model</class>
+                <resourceModel>imedia_countdown_mysql4</resourceModel>
+            </imedia_countdown>
+            <imedia_countdown_mysql4>
+                <class>Imedia_Countdown_Model_Mysql4</class>
+                <entities>
+                    <page>
+                        <table>countdown_page</table>
+                    </page>                    
+                </entities>
+            </imedia_countdown_mysql4>
+        </models>
+		
+        <resources>
+            <imedia_countdown_setup>
+                <setup>
+                    <module>Imedia_Countdown</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </imedia_countdown_setup>
+            <imedia_countdown_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </imedia_countdown_write>
+            <imedia_countdown_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </imedia_countdown_read>
+        </resources>
+		
+        <helpers>
+            <imedia_countdown>
+                <class>Imedia_Countdown_Helper</class>
+            </imedia_countdown>
+        </helpers>	
+		
+    </global>
+	
+	
+</config>

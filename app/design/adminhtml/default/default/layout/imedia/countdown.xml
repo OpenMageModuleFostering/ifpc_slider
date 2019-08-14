@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<layout version="0.1.0">
+    <adminhtml_page_index>
+        <reference name="content">
+            <block type="imedia_countdown/adminhtml_page" name="imedia_countdown_page" />
+        </reference>
+    </adminhtml_page_index>
+	
+	<adminhtml_featuredproduct_index>
+        <reference name="content">
+            <block type="imedia_countdown/adminhtml_featuredproduct" name="imedia_countdown_featuredproduct" />
+        </reference>
+    </adminhtml_featuredproduct_index>
+	
+</layout>

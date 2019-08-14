@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Featured product frontend layout file
+ *
+ */
+-->
+<layout version="0.1.0">
+    <!-- <default>
+         <reference name="head">
+		    <action method="addCss"><stylesheet>css/imedia_countdown/flexisel-style.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/imedia_countdown/owl.carousel.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/imedia_countdown/owl.theme.css</stylesheet></action>
+			
+			<action method="addItem" ifconfig="featuredproduct/display/jquery" ><type>skin_js</type><name>js/imedia_countdown/jquery-1.9.1.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/imedia_countdown/owl.carousel.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/imedia_countdown/countdown.js</name></action>
+        </reference>
+      
+    </default> -->
+    <!-- stand alone -->
+	<imedia_featuredproduct_index_index>
+        <reference name="content">
+            <block type="imedia_featuredproduct/countdown_list" name="imediafeatured" template="imedia/countdownslider.phtml" />
+        </reference>
+    </imedia_featuredproduct_index_index>
+	<!-- stand alone -->
+	
+	<!-- <cms_index_index>
+		<reference name="head">
+		    <action method="addCss"><stylesheet>css/imedia_countdown/flexisel-style.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/imedia_countdown/owl.carousel.css</stylesheet></action>
+			<action method="addCss"><stylesheet>css/imedia_countdown/owl.theme.css</stylesheet></action>
+			
+			<action method="addItem" ifconfig="featuredproduct/display/jquery" ><type>skin_js</type><name>js/imedia_countdown/jquery-1.9.1.min.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/imedia_countdown/owl.carousel.js</name></action>
+			<action method="addItem"><type>skin_js</type><name>js/imedia_countdown/countdown.js</name></action>
+        </reference>
+		
+        <reference name="content">
+           <block type="imedia_featuredproduct/countdown_list" name="imediafeatured" template="imedia/countdownslider.phtml" />
+        </reference>
+    </cms_index_index> -->
+       
+</layout>
+
