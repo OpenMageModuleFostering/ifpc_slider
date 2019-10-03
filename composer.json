@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/IFPC_Slider",
+    "name": "openmage-module-fostering\/ifpc_slider",
     "type": "magento-module",
-    "license": "OSLv3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "iMedia Featured Product Countdown Slider",
     "authors": [
