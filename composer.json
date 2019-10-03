@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/IFPC_Slider",
+    "name": "OpenMageModuleFostering\/IFPC_Slider",
     "type": "magento-module",
     "license": "OSLv3.0",
     "homepage": "",
     "description": "iMedia Featured Product Countdown Slider",
     "authors": [
-    {
-        "name": "iMedia inc.",
-        "email": "sachin@imediadesigns.org"
-    }
-],
+        {
+            "name": "iMedia inc.",
+            "email": "sachin@imediadesigns.org"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
